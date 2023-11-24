@@ -25,10 +25,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm-run-all -p server:dev start:frontend",
+    "start:frontend": "react-scripts start",
     "build": "react-scripts build",
     "server:dev": "nodemon server.js",
-    "server:prod": "nodemon server.js",
+    "server:prod": "node server.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -51,6 +52,7 @@
     ]
   },
   "devDependencies": {
-    "babel-plugin-react-require": "^4.0.1"
+    "babel-plugin-react-require": "^4.0.1",
+    "npm-run-all": "^4.1.5"
   }
 }
