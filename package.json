@@ -28,7 +28,7 @@
     "start": "npm-run-all -p server:dev start:frontend",
     "start:frontend": "react-scripts start",
     "build": "react-scripts build",
-    "server:dev": "nodemon server.js",
+    "server:dev": "node server.js",
     "server:prod": "node server.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
